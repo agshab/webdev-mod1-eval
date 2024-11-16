@@ -1,5 +1,4 @@
-@import url("reset.css");
-
+@import url(reset.css);
 html {
 	padding: 0;
 	margin: 0;
@@ -160,6 +159,7 @@ hr {
 }
 
 .footer {
+	padding: 20px;
 	text-align: center;
 }
 
@@ -170,14 +170,23 @@ hr {
 		align-items: center;
 	}
 
+	/* Grid container for the two-column layout */
+	.content-container {
+		display: grid;
+		grid-template-columns: 60% 35%; /* Main article and sidebar */
+		gap: 5%; /* Space between columns */
+	}
+
+	/* Article Section */
 	.main-article {
-		width: 60%;
+		width: auto; /* Adjust to fit grid */
 		border-radius: 0.6rem;
 		margin: 0;
 	}
 
+	/* Sidebar Section */
 	.main-sidebar {
-		width: 40%;
+		width: auto; /* Adjust to fit grid */
 		border-radius: 0.6rem;
 		margin: 0;
 	}
